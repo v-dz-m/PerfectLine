@@ -7,6 +7,70 @@
 
 .header {
   background-color: #eff0f2;
+  text-align: center;
+}
+
+.header__container {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 43px;
+}
+
+.header__link {
+  position: absolute;
+  right: 59px;
+  text-decoration: underline;
+  font-size: 18px;
+  letter-spacing: 2.16px;
+  color: #000000;
+}
+
+.header__title {
+  width: 400px;
+  margin: 58px auto;
+  color: #505050;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 75px;
+  letter-spacing: 2.7px;
+}
+
+.header__button {
+  width: 232px;
+  height: 53px;
+  margin: 29px 0;
+  border: 2px solid #505050;
+  border-radius: 2px;
+  font-size: 18px;
+  letter-spacing: 2.18px;
+}
+.header__button:hover {
+  background-color: #dbdbdb;
+}
+.header__button:active {
+  background-color: #686868;
+}
+
+.header__logos {
+  width: 886px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  padding: 63px 0 81px;
+}
+.header__logos img {
+  height: 89px;
+}
+
+.header__company {
+  background-color: #68478d;
+  color: #ffffff;
+  padding: 2.5px 7.5px;
 }
 
 .contact,
