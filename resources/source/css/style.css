@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.header {
+  background-color: #eff0f2;
+}
+
+.contact,
+.footer {
+  font-family: "Raleway", sans-serif;
+}
