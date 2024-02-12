@@ -81,7 +81,6 @@
 }
 
 .about__container {
-    position: relative;
     max-width: 1440px;
     margin: 0 auto;
     padding-top: 129px;
@@ -146,6 +145,36 @@
         font-size: 17px;
         padding-bottom: 8px;
     }
+}
+
+.featured__container {
+    max-width: 1440px;
+    padding: 128px 0;
+    margin: 0 auto;
+}
+
+.featured__title {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 28px;
+    letter-spacing: 2.28px;
+}
+
+.featured__subtitle {
+    font-family: "Merriweather", serif;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 1.08px;
+    margin-top: 10px;
+}
+
+.featured__collection {
+    max-width: 1140px;
+    margin: 100px auto 0;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .contact,
