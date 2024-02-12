@@ -329,6 +329,7 @@
   color: white;
   border-bottom: 1px solid white;
   margin-bottom: 38px;
+  resize: none;
 }
 .contact__message::-webkit-input-placeholder {
   color: white;
@@ -357,6 +358,12 @@
   background-color: #6eeee4;
   border-radius: 1px;
 }
+.contact__submit:hover {
+  background-color: #b3fef8;
+}
+.contact__submit:active {
+  background-color: #67ccc4;
+}
 
 .contact__info {
   padding: 36px 22px 19px;
@@ -372,4 +379,64 @@
   margin-top: 33px;
   width: 455px;
   height: 224px;
+}
+
+.footer {
+  padding: 93px 0 152px;
+  background-color: #68478d;
+  text-align: center;
+}
+
+.footer__container {
+  margin: 0 auto;
+}
+
+.footer__title {
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0.16px;
+  color: #ffffff;
+}
+
+.footer__links {
+  margin-top: 10px;
+}
+
+.footer__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 7px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__links > li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 46px;
+  height: 40px;
+  background-color: rgba(80, 80, 80, 0.4);
+  opacity: 0.7;
+}
+.footer__links > li:hover {
+  opacity: 1;
+}
+.footer__links > li:active {
+  background-color: #6eeee4;
+}
+.footer__links > li:active svg {
+  fill: #000000;
+}
+
+.footer__links > li svg {
+  fill: #ffffff;
 }
