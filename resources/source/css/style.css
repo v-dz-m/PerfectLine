@@ -261,7 +261,115 @@
           align-items: center;
 }
 
-.contact,
-.footer {
+.contact *,
+.footer * {
   font-family: "Raleway", sans-serif;
+}
+
+.contact {
+  background-image: url("../../images/main/follow-us/background-trees.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: left;
+}
+
+.contact__container {
+  padding: 140px 150px 122px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+.contact__container > div {
+  height: 460px;
+  background-color: rgba(0, 24, 113, 0.7098039216);
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(21, 21, 21, 0.1215686275);
+          box-shadow: 0px 0px 30px 0px rgba(21, 21, 21, 0.1215686275);
+}
+
+.contact__feedback {
+  padding: 47px 32px 38px;
+  margin-right: 26px;
+}
+
+.contact__input {
+  width: 550px;
+  height: 30px;
+  font-size: 15px;
+  line-height: 51px;
+  background-color: transparent;
+  color: white;
+  border-bottom: 1px solid white;
+  margin-bottom: 30px;
+}
+.contact__input::-webkit-input-placeholder {
+  color: white;
+}
+.contact__input::-moz-placeholder {
+  color: white;
+}
+.contact__input:-ms-input-placeholder {
+  color: white;
+}
+.contact__input::-ms-input-placeholder {
+  color: white;
+}
+.contact__input::placeholder {
+  color: white;
+}
+
+.contact__message {
+  width: 550px;
+  height: 105px;
+  font-size: 15px;
+  line-height: 51px;
+  background-color: transparent;
+  color: white;
+  border-bottom: 1px solid white;
+  margin-bottom: 38px;
+}
+.contact__message::-webkit-input-placeholder {
+  color: white;
+}
+.contact__message::-moz-placeholder {
+  color: white;
+}
+.contact__message:-ms-input-placeholder {
+  color: white;
+}
+.contact__message::-ms-input-placeholder {
+  color: white;
+}
+.contact__message::placeholder {
+  color: white;
+}
+
+.contact__submit {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 2.16px;
+  text-transform: uppercase;
+  width: 244px;
+  height: 53px;
+  background-color: #6eeee4;
+  border-radius: 1px;
+}
+
+.contact__info {
+  padding: 36px 22px 19px;
+}
+
+.contact__line {
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.contact__map {
+  margin-top: 33px;
+  width: 455px;
+  height: 224px;
 }
