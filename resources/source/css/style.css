@@ -76,30 +76,32 @@
 .main {
   text-align: center;
 }
+.main .container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.main .title {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 28px;
+  letter-spacing: 2.28px;
+}
+.main .subtitle {
+  font-family: "Merriweather", serif;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 1.08px;
+}
 
 .about {
   background-color: #f8fafa;
 }
 
 .about__container {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding-top: 129px;
-  padding-bottom: 28px;
-}
-
-.about__title {
-  font-weight: 700;
-  font-size: 38px;
-  line-height: 28px;
-  letter-spacing: 2.28px;
+  padding: 129px 0 28px;
 }
 
 .about__subtitle {
-  font-family: "Merriweather", serif;
-  font-size: 18px;
-  line-height: 28px;
-  letter-spacing: 1.08px;
   margin-top: 7px;
 }
 
@@ -152,29 +154,16 @@
 }
 
 .featured__container {
-  max-width: 1440px;
   padding: 128px 0;
-  margin: 0 auto;
-}
-
-.featured__title {
-  font-weight: 700;
-  font-size: 38px;
-  line-height: 28px;
-  letter-spacing: 2.28px;
 }
 
 .featured__subtitle {
-  font-family: "Merriweather", serif;
-  font-size: 18px;
-  line-height: 28px;
-  letter-spacing: 1.08px;
   margin-top: 10px;
 }
 
 .featured__collection {
-  max-width: 1140px;
   margin: 100px auto 0;
+  max-width: 1140px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -184,6 +173,88 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.team {
+  background-color: #eff0f2;
+}
+
+.team__container {
+  padding: 104px 0 171px;
+}
+
+.team__subtitle {
+  margin-top: 10px;
+}
+
+.team__collection {
+  margin: 108px auto 0;
+  max-width: 1140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 7px 15px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.employee {
+  position: relative;
+}
+
+.employee__about {
+  position: absolute;
+  width: calc(100% - 36px);
+  height: 241px;
+  bottom: 0;
+  margin: 0 18px 15px;
+  padding: 37px 50px 37px 37px;
+  text-align: left;
+  background-color: #eff0f2;
+  border: 1px solid #000000;
+  opacity: 0.98;
+  -webkit-box-shadow: 2.7000000477px 6.4000000954px 16px 0px rgba(20, 20, 21, 0.1803921569);
+          box-shadow: 2.7000000477px 6.4000000954px 16px 0px rgba(20, 20, 21, 0.1803921569);
+}
+
+.employee__name {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+
+.employee__position {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.45px;
+}
+
+.employee__info {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.16px;
+  margin-bottom: 24px;
+}
+
+.employee__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  gap: 33px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contact,
