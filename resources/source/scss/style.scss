@@ -192,9 +192,16 @@
 
 .employee {
     position: relative;
+
+    &:hover {
+        .employee__about {
+            display: block;
+        }
+    }
 }
 
 .employee__about {
+    display: none;
     position: absolute;
     width: calc(100% - 36px);
     bottom: 0;
@@ -258,7 +265,9 @@
 .contact__container {
     padding: 140px 150px 122px;
     display: flex;
-    justify-content: start;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 26px;
 
     > div {
         height: 460px;
@@ -268,39 +277,35 @@
 }
 
 .contact__feedback {
+    width: 100%;
+    max-width: 614px;
     padding: 47px 32px 38px;
-    margin-right: 26px;
+}
+
+.contact__input,
+.contact__message {
+    display: block;
+    background-color: transparent;
+    width: 100%;
+    font-size: 15px;
+    line-height: 51px;
+    color: white;
+    border-bottom: 1px solid white;
+
+    &::placeholder {
+        color: white;
+    }
 }
 
 .contact__input {
-    width: 550px;
     height: 30px;
-    font-size: 15px;
-    line-height: 51px;
-    background-color: transparent;
-    color: white;
-    border-bottom: 1px solid white;
     margin-bottom: 30px;
-
-    &::placeholder {
-        color: white;
-    }
 }
 
 .contact__message {
-    width: 550px;
     height: 105px;
-    font-size: 15px;
-    line-height: 51px;
-    background-color: transparent;
-    color: white;
-    border-bottom: 1px solid white;
     margin-bottom: 38px;
     resize: none;
-
-    &::placeholder {
-        color: white;
-    }
 }
 
 .contact__submit {
@@ -324,6 +329,8 @@
 }
 
 .contact__info {
+    width: 100%;
+    max-width: 500px;
     padding: 36px 22px 19px;
 }
 
