@@ -28,7 +28,7 @@
 }
 
 .header__title {
-    width: 400px;
+    max-width: 400px;
     margin: 58px auto;
     color: #505050;
     font-weight: 700;
@@ -41,7 +41,7 @@
     width: 232px;
     height: 53px;
     margin: 29px 0;
-    border: 2px solid #505050;
+    border: 2px solid #00000080;
     border-radius: 2px;
     font-size: 18px;
     letter-spacing: 2.18px;
@@ -70,6 +70,82 @@
     background-color: #68478d;
     color: #ffffff;
     padding: 2.5px 7.5px;
+}
+
+.main {
+    text-align: center;
+}
+
+.about {
+    background-color: #f8fafa;
+}
+
+.about__container {
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-top: 129px;
+    padding-bottom: 28px;
+}
+
+.about__title {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 28px;
+    letter-spacing: 2.28px;
+}
+
+.about__subtitle {
+    font-family: "Merriweather", serif;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 1.08px;
+    margin-top: 7px;
+}
+
+.about__samples {
+    max-width: 1080px;
+    margin: 70px auto;
+}
+
+.about__text {
+    max-width: 1080px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin: 0 auto;
+
+    h3 {
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: 1.2px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.8px;
+        padding: 12px 0;
+    }
+}
+
+.about__actually-do {
+    margin-bottom: 35px;
+
+    h3 {
+        font-size: 20px;
+        padding-bottom: 17px;
+    }
+}
+
+.about__we-great {
+    width: 50%;
+
+    h3 {
+        font-size: 17px;
+        padding-bottom: 8px;
+    }
 }
 
 .contact,
