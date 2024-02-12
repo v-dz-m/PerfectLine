@@ -197,7 +197,6 @@
 .employee__about {
     position: absolute;
     width: calc(100% - 36px);
-    height: 241px;
     bottom: 0;
     margin: 0 18px 15px;
     padding: 37px 50px 37px 37px;
@@ -206,6 +205,11 @@
     border: 1px solid #000000;
     opacity: 0.98;
     box-shadow: 2.700000047683716px 6.400000095367432px 16px 0px #1414152e;
+}
+
+.employee__arrow {
+    position: absolute;
+    top: -21px;
 }
 
 .employee__name {
