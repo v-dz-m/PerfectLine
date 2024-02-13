@@ -193,7 +193,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 7px 15px;
+  gap: 15px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
@@ -309,24 +309,40 @@
   width: 100%;
   font-size: 15px;
   line-height: 51px;
-  color: white;
-  border-bottom: 1px solid white;
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
 }
 .contact__input::-webkit-input-placeholder, .contact__message::-webkit-input-placeholder {
-  color: white;
+  color: #ffffff;
 }
 .contact__input::-moz-placeholder, .contact__message::-moz-placeholder {
-  color: white;
+  color: #ffffff;
 }
 .contact__input:-ms-input-placeholder, .contact__message:-ms-input-placeholder {
-  color: white;
+  color: #ffffff;
 }
 .contact__input::-ms-input-placeholder, .contact__message::-ms-input-placeholder {
-  color: white;
+  color: #ffffff;
 }
 .contact__input::placeholder,
 .contact__message::placeholder {
-  color: white;
+  color: #ffffff;
+}
+.contact__input:focus::-webkit-input-placeholder, .contact__message:focus::-webkit-input-placeholder {
+  color: #808080;
+}
+.contact__input:focus::-moz-placeholder, .contact__message:focus::-moz-placeholder {
+  color: #808080;
+}
+.contact__input:focus:-ms-input-placeholder, .contact__message:focus:-ms-input-placeholder {
+  color: #808080;
+}
+.contact__input:focus::-ms-input-placeholder, .contact__message:focus::-ms-input-placeholder {
+  color: #808080;
+}
+.contact__input:focus::placeholder,
+.contact__message:focus::placeholder {
+  color: #808080;
 }
 
 .contact__input {
@@ -419,7 +435,7 @@
           align-items: center;
   width: 46px;
   height: 40px;
-  background-color: rgba(80, 80, 80, 0.4);
+  background-color: #614a7c;
   opacity: 0.7;
 }
 .footer__links > li:hover {

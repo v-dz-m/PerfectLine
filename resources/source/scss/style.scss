@@ -2,12 +2,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
+$light-color: #eff0f2;
+$dark-color: #505050;
+
 * {
     font-family: "Montserrat", sans-serif;
 }
 
 .header {
-    background-color: #eff0f2;
+    background-color: $light-color;
     text-align: center;
 }
 
@@ -30,7 +33,7 @@
 .header__title {
     max-width: 400px;
     margin: 58px auto;
-    color: #505050;
+    color: $dark-color;
     font-weight: 700;
     font-size: 45px;
     line-height: 75px;
@@ -170,7 +173,7 @@
 }
 
 .team {
-    background-color: #eff0f2;
+    background-color: $light-color;
 }
 
 .team__container {
@@ -185,7 +188,7 @@
     margin: 108px auto 0;
     max-width: 1140px;
     display: flex;
-    gap: 7px 15px;
+    gap: 15px;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -208,7 +211,7 @@
     margin: 0 18px 15px;
     padding: 37px 50px 37px 37px;
     text-align: left;
-    background-color: #eff0f2;
+    background-color: $light-color;
     border: 1px solid #000000;
     opacity: 0.98;
     box-shadow: 2.700000047683716px 6.400000095367432px 16px 0px #1414152e;
@@ -289,11 +292,17 @@
     width: 100%;
     font-size: 15px;
     line-height: 51px;
-    color: white;
-    border-bottom: 1px solid white;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
 
     &::placeholder {
-        color: white;
+        color: #ffffff;
+    }
+
+    &:focus {
+        &::placeholder {
+            color: #808080;
+        }
     }
 }
 
@@ -379,7 +388,7 @@
     align-items: center;
     width: 46px;
     height: 40px;
-    background-color: #50505066;
+    background-color: #614a7c;
     opacity: 0.7;
 
     &:hover {
