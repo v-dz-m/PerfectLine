@@ -6,6 +6,7 @@ $light-color: #eff0f2;
 $dark-color: #505050;
 $purple-color: #68478d;
 $cyan-color: #6eeee4;
+$container-max-x: 1440px;
 
 * {
     font-family: "Montserrat", sans-serif;
@@ -18,14 +19,14 @@ $cyan-color: #6eeee4;
 
 .header__container {
     position: relative;
-    max-width: 1440px;
+    max-width: $container-max-x;
     margin: 0 auto;
-    padding-top: 43px;
+    padding: 45px 0 80px;
 }
 
 .header__link {
     position: absolute;
-    right: 59px;
+    right: 60px;
     text-decoration: underline;
     font-size: 18px;
     letter-spacing: 2.16px;
@@ -73,7 +74,7 @@ $cyan-color: #6eeee4;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    padding: 63px 0 81px;
+    padding: 63px 0 0;
     img {
         height: 89px;
     }
@@ -89,7 +90,7 @@ $cyan-color: #6eeee4;
     text-align: center;
 
     .container {
-        max-width: 1440px;
+        max-width: $container-max-x;
         margin: 0 auto;
     }
 
@@ -121,6 +122,7 @@ $cyan-color: #6eeee4;
 }
 
 .about__samples {
+    width: 80%;
     max-width: 1080px;
     margin: 70px auto;
 }
@@ -321,6 +323,7 @@ $cyan-color: #6eeee4;
 .contact__input,
 .contact__message {
     display: block;
+    padding: 0 3px;
     background-color: transparent;
     width: 100%;
     font-size: 15px;
@@ -373,7 +376,7 @@ $cyan-color: #6eeee4;
 .contact__info {
     width: 100%;
     max-width: 500px;
-    padding: 36px 22px 19px;
+    padding: 35px 22px 20px;
 }
 
 .contact__line {
@@ -395,6 +398,7 @@ $cyan-color: #6eeee4;
 }
 
 .footer__container {
+    max-width: $container-max-x;
     margin: 0 auto;
 }
 
