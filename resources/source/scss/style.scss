@@ -33,10 +33,12 @@ $container-max-x: 1440px;
     color: #000000;
 
     &:hover {
+        text-decoration: underline;
         color: $dark-color;
     }
 
     &:active {
+        text-decoration: underline;
         color: #808080;
     }
 }
@@ -262,6 +264,8 @@ $container-max-x: 1440px;
 
 .employee__links {
     display: flex;
+    position: relative;
+    left: -10px;
     justify-content: left;
     gap: 13px;
     align-items: center;

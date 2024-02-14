@@ -26,9 +26,11 @@
   color: #000000;
 }
 .header__link:hover {
+  text-decoration: underline;
   color: #505050;
 }
 .header__link:active {
+  text-decoration: underline;
   color: #808080;
 }
 
@@ -263,6 +265,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  left: -10px;
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
