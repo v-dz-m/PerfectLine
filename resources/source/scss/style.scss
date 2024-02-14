@@ -72,11 +72,12 @@ $container-max-x: 1440px;
 }
 
 .header__logos {
-    width: 886px;
     display: flex;
     justify-content: space-between;
+    width: 886px;
     margin: 0 auto;
     padding: 63px 0 0;
+
     img {
         height: 89px;
     }
@@ -130,12 +131,12 @@ $container-max-x: 1440px;
 }
 
 .about__text {
-    max-width: 1080px;
-    text-align: left;
     display: flex;
     flex-direction: column;
     align-items: end;
+    max-width: 1080px;
     margin: 0 auto;
+    text-align: left;
 
     h3 {
         font-weight: 700;
@@ -144,10 +145,10 @@ $container-max-x: 1440px;
     }
 
     p {
+        padding: 12px 0;
         font-size: 16px;
         line-height: 28px;
         letter-spacing: 0.8px;
-        padding: 12px 0;
     }
 }
 
@@ -155,8 +156,8 @@ $container-max-x: 1440px;
     margin-bottom: 35px;
 
     h3 {
-        font-size: 20px;
         padding-bottom: 17px;
+        font-size: 20px;
     }
 }
 
@@ -164,8 +165,8 @@ $container-max-x: 1440px;
     width: 50%;
 
     h3 {
-        font-size: 17px;
         padding-bottom: 8px;
+        font-size: 17px;
     }
 }
 
@@ -178,12 +179,12 @@ $container-max-x: 1440px;
 }
 
 .featured__collection {
-    margin: 100px auto 0;
-    max-width: 1140px;
     display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    max-width: 1140px;
+    margin: 100px auto 0;
 }
 
 .team {
@@ -199,12 +200,12 @@ $container-max-x: 1440px;
 }
 
 .team__collection {
-    margin: 108px auto 0;
-    max-width: 1140px;
     display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    max-width: 1140px;
+    margin: 108px auto 0;
 }
 
 .employee {
@@ -220,16 +221,16 @@ $container-max-x: 1440px;
 .employee__about {
     $margin-x: 18px;
 
-    display: none;
     position: absolute;
+    bottom: 15px;
+    display: none;
     width: calc(100% - $margin-x * 2);
     min-height: 240px;
-    bottom: 15px;
     margin: 0 $margin-x;
     padding: 37px 50px 37px 37px;
-    text-align: left;
-    background-color: $light-color;
     border: 1px solid #000000;
+    background-color: $light-color;
+    text-align: left;
     box-shadow: 2.700000047683716px 6.400000095367432px 16px 0px #1414152e;
 }
 
@@ -239,12 +240,12 @@ $container-max-x: 1440px;
 }
 
 .employee__name {
+    margin-bottom: 16px;
     font-family: "Merriweather", serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 1px;
-    margin-bottom: 16px;
 }
 
 .employee__position {
@@ -255,20 +256,20 @@ $container-max-x: 1440px;
 }
 
 .employee__info {
+    margin-bottom: 10px;
     font-family: "Raleway", sans-serif;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.16px;
-    margin-bottom: 10px;
 }
 
 .employee__links {
-    display: flex;
     position: relative;
     left: -10px;
+    display: flex;
     justify-content: left;
-    gap: 13px;
     align-items: center;
+    gap: 13px;
 
     li {
         width: 46px;
@@ -299,17 +300,16 @@ $container-max-x: 1440px;
 
 .contact {
     background-image: url("../../images/main/follow-us/background-trees.jpg");
-    background-repeat: no-repeat;
     background-size: cover;
     text-align: left;
 }
 
 .contact__container {
-    padding: 140px 150px 122px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 26px;
+    padding: 140px 150px 122px;
 
     > div {
         height: 460px;
@@ -327,13 +327,13 @@ $container-max-x: 1440px;
 .contact__input,
 .contact__message {
     display: block;
-    padding: 0 3px;
-    background-color: transparent;
     width: 100%;
+    padding: 0 3px;
+    border-bottom: 1px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
     font-size: 15px;
     line-height: 51px;
-    color: #ffffff;
-    border-bottom: 1px solid #ffffff;
 
     &::placeholder {
         color: #ffffff;
@@ -358,15 +358,15 @@ $container-max-x: 1440px;
 }
 
 .contact__submit {
+    width: 244px;
+    height: 53px;
+    border-radius: 1px;
+    background-color: $cyan-color;
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
     line-height: 28px;
     letter-spacing: 2.16px;
     text-transform: uppercase;
-    width: 244px;
-    height: 53px;
-    background-color: $cyan-color;
-    border-radius: 1px;
 
     &:hover {
         background-color: #b3fef8;
@@ -390,9 +390,9 @@ $container-max-x: 1440px;
 }
 
 .contact__map {
-    margin-top: 33px;
     width: 455px;
     height: 224px;
+    margin-top: 33px;
 }
 
 .footer {
@@ -407,10 +407,10 @@ $container-max-x: 1440px;
 }
 
 .footer__title {
+    color: #ffffff;
     font-size: 16px;
     line-height: 25px;
     letter-spacing: 0.16px;
-    color: #ffffff;
 }
 
 .footer__links {
@@ -419,8 +419,8 @@ $container-max-x: 1440px;
 
 .footer__links {
     display: flex;
-    gap: 7px;
     justify-content: center;
+    gap: 7px;
 }
 
 .footer__links > li {
