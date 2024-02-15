@@ -256,6 +256,8 @@ $container-max-x: 1440px;
 }
 
 .employee__info {
+    overflow: auto;
+    max-height: 72px;
     margin-bottom: 10px;
     font-family: "Raleway", sans-serif;
     font-size: 16px;
@@ -340,6 +342,9 @@ $container-max-x: 1440px;
     }
 
     &:focus {
+        color: $cyan-color;
+        border-color: $cyan-color;
+
         &::placeholder {
             color: #808080;
         }

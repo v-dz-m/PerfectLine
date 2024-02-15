@@ -254,6 +254,8 @@
 }
 
 .employee__info {
+  overflow: auto;
+  max-height: 72px;
   margin-bottom: 10px;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
@@ -361,6 +363,11 @@
 .contact__input::placeholder,
 .contact__message::placeholder {
   color: #ffffff;
+}
+.contact__input:focus,
+.contact__message:focus {
+  color: #6eeee4;
+  border-color: #6eeee4;
 }
 .contact__input:focus::-webkit-input-placeholder, .contact__message:focus::-webkit-input-placeholder {
   color: #808080;
