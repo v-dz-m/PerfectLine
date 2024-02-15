@@ -228,8 +228,8 @@
   border: 1px solid #000000;
   background-color: #eff0f2;
   text-align: left;
-  -webkit-box-shadow: 2.7000000477px 6.4000000954px 16px 0px rgba(20, 20, 21, 0.1803921569);
-          box-shadow: 2.7000000477px 6.4000000954px 16px 0px rgba(20, 20, 21, 0.1803921569);
+  -webkit-box-shadow: 2.7px 6.4px 16px 0px rgba(20, 20, 21, 0.1803921569);
+          box-shadow: 2.7px 6.4px 16px 0px rgba(20, 20, 21, 0.1803921569);
 }
 
 .employee__arrow {
@@ -468,8 +468,11 @@
   background-color: #6eeee4;
   opacity: 1;
 }
-.footer__links > li:active svg {
+.footer__links > li:hover svg {
   fill: #000000;
+}
+.footer__links > li:active svg {
+  fill: #ffffff;
 }
 .footer__links > li a {
   display: -webkit-box;

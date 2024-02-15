@@ -231,7 +231,7 @@ $container-max-x: 1440px;
     border: 1px solid #000000;
     background-color: $light-color;
     text-align: left;
-    box-shadow: 2.700000047683716px 6.400000095367432px 16px 0px #1414152e;
+    box-shadow: 2.7px 6.4px 16px 0px #1414152e;
 }
 
 .employee__arrow {
@@ -432,11 +432,14 @@ $container-max-x: 1440px;
     &:hover {
         background-color: $cyan-color;
         opacity: 1;
+        svg {
+            fill: #000000;
+        }
     }
 
     &:active {
         svg {
-            fill: #000000;
+            fill: #ffffff;
         }
     }
 
