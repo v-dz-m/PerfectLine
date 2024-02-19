@@ -7,6 +7,7 @@
 .form__browse,
 .form__save {
   background-color: #001871;
+  color: #ffffff;
   border: none;
 }
 .main__add-person:hover,
@@ -81,7 +82,7 @@
 
 .main__employee {
   margin: 20px auto;
-  padding: 13px 20px;
+  padding: 13px 13px 13px 20px;
   border: 1px solid #505050;
   border-radius: 4px;
 }
