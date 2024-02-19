@@ -1,7 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap");
 
 * {
     font-family: "Montserrat", sans-serif;
+}
+
+.main__add-person,
+.form__browse,
+.form__save {
+    background-color: #001871;
+    border: none;
+
+    &:hover {
+        background-color: #4b71fe;
+    }
+
+    &:active {
+        background-color: #002eda;
+    }
 }
 
 .nav__container {
@@ -11,7 +26,7 @@
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    padding: 15px 20px;
+    padding: 10px 20px;
     background-color: #68478d;
     border-radius: 4px;
 }
@@ -40,6 +55,15 @@
     height: 1px;
     margin: 30px 0 50px;
     background-color: #505050;
+}
+
+.main__add-person {
+    width: 200px;
+    height: 40px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
 }
 
 .main__list {
@@ -71,4 +95,78 @@
     font-size: 16px;
     line-height: 25px;
     letter-spacing: 0.16px;
+}
+
+.form {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    padding: 40px;
+    background-color: #f0f1f3;
+}
+
+.form__title {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 600;
+}
+
+.form__close {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.form__data {
+    margin-top: 37px;
+
+    .row {
+        margin-bottom: 20px;
+        align-items: center;
+        font-size: 16px;
+        line-height: 24px;
+
+        & > .col:first-child {
+            flex: 2;
+        }
+
+        & > .col:last-child {
+            flex: 5;
+        }
+    }
+
+    .col {
+        height: 100%;
+    }
+
+    input {
+        font-size: 16px;
+        line-height: 24px;
+        height: 36px;
+    }
+
+    textarea {
+        font-size: 16px;
+        line-height: 24px;
+        height: 118px;
+    }
+}
+
+.form__browse {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.form__save {
+    width: 126px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19.5px;
 }
