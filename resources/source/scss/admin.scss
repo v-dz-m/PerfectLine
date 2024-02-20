@@ -107,6 +107,7 @@
 }
 
 .form__title {
+    text-align: center;
     font-size: 24px;
     line-height: 29px;
     font-weight: 600;
@@ -136,6 +137,14 @@
 
         & > .col:last-child {
             flex: 5;
+        }
+    }
+
+    .form__row-description {
+        align-items: start;
+
+        label {
+            margin-top: 1rem;
         }
     }
 
@@ -171,4 +180,11 @@
     font-weight: 600;
     font-size: 16px;
     line-height: 19.5px;
+}
+
+.form__copyright {
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
 }

@@ -114,6 +114,7 @@
 }
 
 .form__title {
+  text-align: center;
   font-size: 24px;
   line-height: 29px;
   font-weight: 600;
@@ -149,6 +150,14 @@
       -ms-flex: 5;
           flex: 5;
 }
+.form__data .form__row-description {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+.form__data .form__row-description label {
+  margin-top: 1rem;
+}
 .form__data .col {
   height: 100%;
 }
@@ -178,4 +187,11 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 19.5px;
+}
+
+.form__copyright {
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
 }
