@@ -14,41 +14,43 @@
 <body>
     <nav class="nav">
         <div class="nav__container">
-            <h2 class="nav__start m-0">AdminPanel</h2>
+            <a href="/resources/views/admin/admin-panel.html">
+                <h2 class="nav__start m-0">AdminPanel</h2>
+            </a>
             <img class="nav__logo" src="../../../images/admin/admin-logo.svg" alt="Admin Logo">
         </div>
     </nav>
     <main class="person">
         <form action="" class="person__form">
-            <h1 class="form__title">Create person</h1>
-            <img src="/resources/images/admin/cross.svg" alt="Close form" class="form__close">
-            <div class="form__data">
+            <h1 class="person__title">Create person</h1>
+            <img src="/resources/images/admin/cross.svg" alt="Close form" class="person__close">
+            <div class="person__data">
                 <div class="row">
                     <div class="col"><label for="name">Name</label></div>
                     <div class="col">
-                        <input type="text" id="name" name="name" class="form__name form-control">
+                        <input type="text" id="name" name="name" class="person__name form-control">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col"><label for="position">Position</label></div>
                     <div class="col">
-                        <input type="text" id="position" name="position" class="form__position form-control">
+                        <input type="text" id="position" name="position" class="person__position form-control">
                     </div>
                 </div>
-                <div class="row form__row-description">
+                <div class="row person__description-row">
                     <div class="col"><label for="description">Description</label></div>
                     <div class="col">
                         <textarea name="" id="description" name="description"
-                            class="form__description form-control"></textarea>
+                            class="person__description form-control"></textarea>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col"><label for="photo">Photo</label></div>
                     <div class="col">
-                        <label class="input-group" for="photo">
-                            <span class="form__choose form-control">Choose file</span>
+                        <label class="person__file input-group" for="photo">
+                            <span class="person__file-choose form-control">Choose file</span>
                             <span>
-                                <label for="photo" class="form__browse btn btn-primary">Browse</label>
+                                <label for="photo" class="person__file-browse btn btn-primary">Browse</label>
                             </span>
                             <input type="file" name="photo" id="photo" class="d-none">
                         </label>
@@ -57,23 +59,23 @@
                 <div class="row">
                     <div class="col"><label for="facebook">Facebook</label></div>
                     <div class="col">
-                        <input type="text" id="facebook" name="facebook" class="form__facebook form-control">
+                        <input type="text" id="facebook" name="facebook" class="person__facebook form-control">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col"><label for="mail">Mail</label></div>
                     <div class="col">
-                        <input type="text" id="mail" name="mail" class="form__mail form-control">
+                        <input type="text" id="mail" name="mail" class="person__mail form-control">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col"><label for="twitter">Twitter</label></div>
                     <div class="col">
-                        <input type="text" id="twitter" name="twitter" class="form__twitter form-control">
+                        <input type="text" id="twitter" name="twitter" class="person__twitter form-control">
                     </div>
                 </div>
             </div>
-            <button type="submit" class="form__save btn btn-primary">Save</button>
+            <button type="submit" class="person__save btn btn-primary">Save</button>
         </form>
     </main>
     <footer class="footer">

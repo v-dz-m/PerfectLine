@@ -4,20 +4,20 @@
 }
 
 .main__add-person,
-.form__browse,
-.form__save {
+.person__file-browse,
+.person__save {
   background-color: #001871;
   color: #ffffff;
   border: none;
 }
 .main__add-person:hover,
-.form__browse:hover,
-.form__save:hover {
+.person__file-browse:hover,
+.person__save:hover {
   background-color: #4b71fe;
 }
 .main__add-person:active,
-.form__browse:active,
-.form__save:active {
+.person__file-browse:active,
+.person__save:active {
   background-color: #002eda;
 }
 
@@ -115,6 +115,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  min-height: calc(100vh - 180px);
   width: 100%;
   max-width: 1080px;
   padding: 30px 20px 0;
@@ -129,14 +132,14 @@
   background-color: #f0f1f3;
 }
 
-.form__title {
+.person__title {
   text-align: center;
   font-size: 24px;
   line-height: 29px;
   font-weight: 600;
 }
 
-.form__close {
+.person__close {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -145,10 +148,10 @@
   cursor: pointer;
 }
 
-.form__data {
+.person__data {
   margin-top: 37px;
 }
-.form__data .row {
+.person__data .row {
   margin: 0 0 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -156,41 +159,41 @@
   font-size: 16px;
   line-height: 24px;
 }
-.form__data .row > .col:first-child {
+.person__data .row > .col:first-child {
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
 }
-.form__data .row > .col:last-child {
+.person__data .row > .col:last-child {
   -webkit-box-flex: 5;
       -ms-flex: 5;
           flex: 5;
 }
-.form__data .form__row-description {
+.person__data .person__description-row {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
 }
-.form__data .form__row-description label {
+.person__data .person__description-row label {
   margin-top: 1rem;
 }
-.form__data .col {
+.person__data .col {
   height: 100%;
   padding: 0;
 }
-.form__data input {
+.person__data input {
   font-size: 16px;
   line-height: 24px;
   height: 36px;
 }
-.form__data .form__description {
+.person__data .person__description {
   padding: 15px;
   font-size: 16px;
   line-height: 24px;
   height: 118px;
 }
 
-.form__browse {
+.person__file-browse {
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
@@ -198,7 +201,7 @@
   border-radius: 0 4px 4px 0;
 }
 
-.form__save {
+.person__save {
   width: 126px;
   height: 40px;
   margin-top: 20px;
@@ -206,11 +209,4 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 19.5px;
-}
-
-.form__copyright {
-  margin-top: 30px;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: center;
 }

@@ -5,8 +5,8 @@
 }
 
 .main__add-person,
-.form__browse,
-.form__save {
+.person__file-browse,
+.person__save {
     background-color: #001871;
     color: #ffffff;
     border: none;
@@ -102,6 +102,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    align-content: center;
+    min-height: calc(100vh - 180px);
     width: 100%;
     max-width: 1080px;
     padding: 30px 20px 0;
@@ -116,14 +118,14 @@
     background-color: #f0f1f3;
 }
 
-.form__title {
+.person__title {
     text-align: center;
     font-size: 24px;
     line-height: 29px;
     font-weight: 600;
 }
 
-.form__close {
+.person__close {
     position: absolute;
     width: 20px;
     height: 20px;
@@ -132,7 +134,7 @@
     cursor: pointer;
 }
 
-.form__data {
+.person__data {
     margin-top: 37px;
 
     .row {
@@ -150,7 +152,7 @@
         }
     }
 
-    .form__row-description {
+    .person__description-row {
         align-items: start;
 
         label {
@@ -169,7 +171,7 @@
         height: 36px;
     }
 
-    .form__description {
+    .person__description {
         padding: 15px;
         font-size: 16px;
         line-height: 24px;
@@ -177,7 +179,7 @@
     }
 }
 
-.form__browse {
+.person__file-browse {
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
@@ -185,7 +187,7 @@
     border-radius: 0 4px 4px 0;
 }
 
-.form__save {
+.person__save {
     width: 126px;
     height: 40px;
     margin-top: 20px;
@@ -193,11 +195,4 @@
     font-weight: 600;
     font-size: 16px;
     line-height: 19.5px;
-}
-
-.form__copyright {
-    margin-top: 30px;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
 }
