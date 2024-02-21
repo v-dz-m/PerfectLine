@@ -106,7 +106,7 @@
   letter-spacing: 0.16px;
 }
 
-.person {
+.person__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
