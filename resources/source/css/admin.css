@@ -91,7 +91,17 @@
 
 .index__name {
   font-size: 18px;
-  line-height: 26px;
+  line-height: 24px;
+}
+
+.index__actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 20px;
 }
 
 .footer__container {
@@ -198,7 +208,7 @@
 }
 
 .person__save {
-  width: 126px;
+  width: 120px;
   height: 40px;
   margin-top: 20px;
   border-radius: 4px;
