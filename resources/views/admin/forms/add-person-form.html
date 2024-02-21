@@ -12,8 +12,14 @@
 </head>
 
 <body>
-    <div class="d-flex justify-content-center align-items-center min-vh-100 vw-100">
-        <form action="" class="form">
+    <nav class="nav">
+        <div class="nav__container">
+            <h2 class="nav__start m-0">AdminPanel</h2>
+            <img class="nav__logo" src="../../../images/admin/admin-logo.svg" alt="Admin Logo">
+        </div>
+    </nav>
+    <main class="person">
+        <form action="" class="person__form">
             <h1 class="form__title">Create person</h1>
             <img src="/resources/images/admin/cross.svg" alt="Close form" class="form__close">
             <div class="form__data">
@@ -68,9 +74,13 @@
                 </div>
             </div>
             <button type="submit" class="form__save btn btn-primary">Save</button>
-            <p class="form__copyright mb-0">© PerfectLine</p>
         </form>
-    </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <p class="footer__copyright m-0">© PerfectLine</p>
+        </div>
+    </footer>
 </body>
 
 </html>
