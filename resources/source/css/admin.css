@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.header__container {
+  width: 100%;
+  max-width: 1080px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #68478d;
+  border-radius: 4px;
+}
+
+.header__start {
+  font-weight: 800;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.index__container,
+.person__container {
+  width: 100%;
+  max-width: 1080px;
+  min-height: calc(100vh - 180px);
+  margin: 0 auto;
+  padding: 30px 20px 0;
+}
+
+.index__title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -2%;
+}
+
+.index__line {
+  height: 1px;
+  margin: 30px 0 50px;
+  background-color: #505050;
+}
+
+.index__add-person,
+.person__file-browse,
+.person__save {
+  background-color: #001871;
+  color: #ffffff;
+  border: none;
+  font-weight: 600;
+}
+.index__add-person:hover,
+.person__file-browse:hover,
+.person__save:hover {
+  background-color: #4b71fe;
+}
+.index__add-person:active,
+.person__file-browse:active,
+.person__save:active {
+  background-color: #002eda;
+}
+
+.index__add-person {
+  width: 200px;
+  height: 40px;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.index__list {
+  margin: 0;
+  width: 100%;
+  max-width: 500px;
+}
+
+.index__employee {
+  margin: 20px auto;
+  padding: 13px 13px 13px 20px;
+  border: 1px solid #505050;
+  border-radius: 4px;
+}
+
+.index__name {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.index__actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 20px;
+}
+
+.footer__container {
+  max-width: 1080px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.footer__copyright {
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0.16px;
+}
+
+.person__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.person__form {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  padding: 40px;
+  background-color: #f0f1f3;
+}
+
+.person__title {
+  text-align: center;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 600;
+}
+
+.person__close {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.person__data {
+  margin-top: 37px;
+}
+.person__data .row {
+  margin: 0 0 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  line-height: 24px;
+}
+.person__data .row > .col:first-child {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+.person__data .row > .col:last-child {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+}
+.person__data .person__description-row {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+.person__data .person__description-row label {
+  margin-top: 1rem;
+}
+.person__data .col {
+  height: 100%;
+  padding: 0;
+}
+.person__data input {
+  font-size: 16px;
+  line-height: 24px;
+  height: 36px;
+}
+.person__data .person__description {
+  padding: 15px;
+  font-size: 16px;
+  line-height: 24px;
+  height: 118px;
+  resize: none;
+}
+
+.person__file-browse {
+  font-size: 16px;
+  line-height: 24px;
+  border: 1px solid #ced4da;
+  border-radius: 0 4px 4px 0;
+}
+
+.person__save {
+  width: 120px;
+  height: 40px;
+  margin-top: 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 19.5px;
+}
