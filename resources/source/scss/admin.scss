@@ -23,7 +23,8 @@
 }
 
 .index__container,
-.person__container {
+.person__container,
+.auth__container {
     width: 100%;
     max-width: 1080px;
     min-height: calc(100vh - 180px);
@@ -46,7 +47,8 @@
 
 .index__add-person,
 .person__file-browse,
-.person__save {
+.person__save,
+.auth__enter {
     background-color: #001871;
     color: #ffffff;
     border: none;
@@ -106,14 +108,16 @@
     letter-spacing: 0.16px;
 }
 
-.person__container {
+.person__container,
+.auth__container {
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
 }
 
-.person__form {
+.person__form,
+.auth__form {
     position: relative;
     width: 100%;
     max-width: 500px;
@@ -130,10 +134,10 @@
 
 .person__close {
     position: absolute;
-    width: 20px;
-    height: 20px;
     top: 20px;
     right: 20px;
+    width: 20px;
+    height: 20px;
     cursor: pointer;
 }
 
@@ -197,4 +201,61 @@
     border-radius: 4px;
     font-size: 16px;
     line-height: 19.5px;
+}
+
+.auth__heading,
+.auth__label {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.auth__heading {
+    text-align: center;
+}
+
+.auth__fields {
+    margin: 40px 0;
+
+    & > .auth__row:last-child {
+        padding-bottom: 0;
+    }
+}
+
+.auth__row {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.auth__input {
+    height: 38px;
+    padding: 9px 16px 8px;
+    font-size: 16px;
+    line-height: 21px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+.auth__input_success {
+    border: 1px solid #28a745;
+}
+
+.auth__input_error {
+    border: 1px solid #dc3545;
+}
+
+.auth__enter {
+    width: 120px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+.auth__error {
+    margin-left: 40px;
+    color: #dc3545;
+    vertical-align: middle;
+    font-size: 16px;
+    line-height: 21px;
 }
