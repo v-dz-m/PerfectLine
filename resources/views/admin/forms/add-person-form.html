@@ -85,6 +85,25 @@
             <p class="footer__copyright m-0">© PerfectLine</p>
         </div>
     </footer>
+    <script>
+        document.querySelector("#photo").addEventListener("change", displayFileName);
+
+        function displayFileName() {
+            const captionSpan = document.querySelector(".person__file-choose");
+            const filename = this.files[0].name;
+            if (filename.length > 18) {
+                // if full file name size longer than 18 characters, short it, short it to 18 using ellipses
+                // from the end leave extension, dot and two last name characters, in the middle insert (...)
+                // spare space fill with first chars of file name
+                const extensionLength = filename.split(".").pop().length;
+                const wrapStart = filename.slice(0, 12 - extensionLength);
+                const wrapEnd = filename.slice(-3 - extensionLength);
+                captionSpan.textContent = wrapStart + "..." + wrapEnd;
+            } else {
+                captionSpan.textContent = filename;
+            }
+        }
+    </script>
 </body>
 
 </html>
