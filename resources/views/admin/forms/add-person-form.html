@@ -92,8 +92,8 @@
             const captionSpan = document.querySelector(".person__file-choose");
             const filename = this.files[0].name;
             if (filename.length > 18) {
-                // if full file name size longer than 18 characters, short it, short it to 18 using ellipses
-                // from the end leave extension, dot and two last name characters, in the middle insert (...)
+                // if full file name size longer than 18 characters, short it to 18 using ellipses:
+                // from the end leave file extension, dot and two last name characters, in the middle insert (...),
                 // spare space fill with first chars of file name
                 const extensionLength = filename.split(".").pop().length;
                 const wrapStart = filename.slice(0, 12 - extensionLength);

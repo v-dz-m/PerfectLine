@@ -8,10 +8,10 @@ function beforeSend(event) {
     const message = document.querySelector(".contact__message").value;
     console.log(name, phone, email, message);
     if (name && phone && email && message) {
-        alert(`Dear ${name}, your message has been sent successfully.`);
+        success(name);
     }
 }
 
-function success() {
-
+function success(name) {
+    alert(`Dear ${name}, your message has been sent successfully.`);
 }
