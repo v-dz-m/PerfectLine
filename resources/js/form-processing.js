@@ -1,4 +1,7 @@
-document.querySelector(".contact__form").addEventListener("submit", beforeSend, event);
+// js form
+// document.querySelector(".contact__form").addEventListener("submit", beforeSend, event);
+// jquery form
+$(".contact__form").submit(beforeSend, event);
 
 function beforeSend(event) {
     event.preventDefault();
@@ -8,7 +11,7 @@ function beforeSend(event) {
     const message = document.querySelector(".contact__message").value;
     // additional check, maybe in future we will use trim for fields
     if (name && email && message) {
-        // here will be an ajax-request
+        // here will be an AJAX request
         success(name);
     }
 }
