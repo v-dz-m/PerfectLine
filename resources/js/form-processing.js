@@ -1,4 +1,4 @@
-document.querySelector(".contact__submit").addEventListener("click", beforeSend, event);
+document.querySelector(".contact__form").addEventListener("submit", beforeSend, event);
 
 function beforeSend(event) {
     event.preventDefault();
@@ -6,8 +6,9 @@ function beforeSend(event) {
     const phone = document.querySelector(".contact__phone").value;
     const email = document.querySelector(".contact__email").value;
     const message = document.querySelector(".contact__message").value;
-    console.log(name, phone, email, message);
-    if (name && phone && email && message) {
+    // additional check, maybe in future we will use trim for fields
+    if (name && email && message) {
+        // here will be an ajax-request
         success(name);
     }
 }
