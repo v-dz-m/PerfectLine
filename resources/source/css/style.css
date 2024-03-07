@@ -16,22 +16,60 @@
   margin: 0 auto;
   padding: 45px 0 80px;
 }
+@media screen and (max-width: 576px) {
+  .header__container {
+    padding: 20px 20px 40px;
+  }
+}
 
-.header__link {
+@media screen and (max-width: 576px) {
+  .header__logo {
+    width: 180px;
+    height: 100px;
+  }
+}
+
+.header__link,
+.header__link-small {
   position: absolute;
-  right: 60px;
   text-decoration: underline;
   font-size: 18px;
+  line-height: 28px;
   letter-spacing: 2.16px;
   color: #000000;
 }
-.header__link:hover {
+.header__link:hover,
+.header__link-small:hover {
   text-decoration: underline;
   color: #505050;
 }
-.header__link:active {
+.header__link:active,
+.header__link-small:active {
   text-decoration: underline;
   color: #808080;
+}
+
+.header__link {
+  right: 60px;
+}
+@media screen and (max-width: 576px) {
+  .header__link {
+    display: none;
+  }
+}
+
+.header__link-small {
+  display: none;
+  right: 20px;
+}
+@media screen and (max-width: 576px) {
+  .header__link-small {
+    display: block;
+  }
+}
+
+.header__info {
+  /* will made flexbox and row-reverse for mobile */
 }
 
 .header__title {
@@ -42,6 +80,13 @@
   font-size: 45px;
   line-height: 75px;
   letter-spacing: 2.7px;
+}
+@media screen and (max-width: 576px) {
+  .header__title {
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 240px;
+  }
 }
 
 .header__button {
@@ -67,12 +112,17 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 886px;
+  max-width: 886px;
   margin: 0 auto;
   padding: 63px 0 0;
 }
 .header__logos img {
   height: 89px;
+}
+@media screen and (max-width: 576px) {
+  .header__logos {
+    display: none;
+  }
 }
 
 .header__company {
@@ -94,11 +144,23 @@
   line-height: 28px;
   letter-spacing: 2.28px;
 }
+@media screen and (max-width: 576px) {
+  .main .title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
 .main .subtitle {
   font-family: "Merriweather", serif;
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 1.08px;
+}
+@media screen and (max-width: 576px) {
+  .main .subtitle {
+    font-size: 14px;
+    line-height: 28px;
+  }
 }
 
 .about {
@@ -107,6 +169,11 @@
 
 .about__container {
   padding: 129px 0 28px;
+}
+@media screen and (max-width: 576px) {
+  .about__container {
+    padding: 40px 20px;
+  }
 }
 
 .about__subtitle {
@@ -117,6 +184,11 @@
   width: 80%;
   max-width: 1080px;
   margin: 70px auto;
+}
+@media screen and (max-width: 576px) {
+  .about__samples {
+    width: 100%;
+  }
 }
 
 .about__text {
@@ -145,6 +217,11 @@
   line-height: 28px;
   letter-spacing: 0.8px;
 }
+@media screen and (max-width: 576px) {
+  .about__text p {
+    font-size: 14px;
+  }
+}
 
 .about__actually-do {
   margin-bottom: 35px;
@@ -152,6 +229,16 @@
 .about__actually-do h3 {
   padding-bottom: 17px;
   font-size: 20px;
+}
+@media screen and (max-width: 576px) {
+  .about__actually-do {
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 1.2px;
+  }
+  .about__actually-do h3 {
+    font-size: 14px;
+  }
 }
 
 .about__we-great {
@@ -161,9 +248,22 @@
   padding-bottom: 8px;
   font-size: 17px;
 }
+@media screen and (max-width: 576px) {
+  .about__we-great {
+    width: 100%;
+  }
+  .about__we-great h3 {
+    font-size: 14px;
+  }
+}
 
 .featured__container {
   padding: 128px 0;
+}
+@media screen and (max-width: 576px) {
+  .featured__container {
+    padding: 40px 20px;
+  }
 }
 
 .featured__subtitle {
@@ -182,6 +282,20 @@
   gap: 15px;
   max-width: 1140px;
   margin: 100px auto 0;
+}
+@media screen and (max-width: 576px) {
+  .featured__collection {
+    width: 100%;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    overflow-x: scroll;
+  }
+  .featured__collection > div {
+    width: 100%;
+  }
 }
 
 .team {

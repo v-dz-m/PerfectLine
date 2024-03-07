@@ -7,6 +7,7 @@ $dark-color: #505050;
 $purple-color: #68478d;
 $cyan-color: #6eeee4;
 $container-max-x: 1440px;
+$media-w-phone: 576px;
 
 * {
     font-family: "Montserrat", sans-serif;
@@ -22,13 +23,25 @@ $container-max-x: 1440px;
     max-width: $container-max-x;
     margin: 0 auto;
     padding: 45px 0 80px;
+
+    @media screen and (max-width: $media-w-phone) {
+        padding: 20px 20px 40px;
+    }
 }
 
-.header__link {
+.header__logo {
+    @media screen and (max-width: $media-w-phone) {
+        width: 180px;
+        height: 100px;
+    }
+}
+
+.header__link,
+.header__link-small {
     position: absolute;
-    right: 60px;
     text-decoration: underline;
     font-size: 18px;
+    line-height: 28px;
     letter-spacing: 2.16px;
     color: #000000;
 
@@ -43,6 +56,27 @@ $container-max-x: 1440px;
     }
 }
 
+.header__link {
+    right: 60px;
+
+    @media screen and (max-width: $media-w-phone) {
+        display: none;
+    }
+}
+
+.header__link-small {
+    display: none;
+    right: 20px;
+
+    @media screen and (max-width: $media-w-phone) {
+        display: block;
+    }
+}
+
+.header__info {
+    /* will made flexbox and row-reverse for mobile */
+}
+
 .header__title {
     max-width: 400px;
     margin: 58px auto;
@@ -51,6 +85,12 @@ $container-max-x: 1440px;
     font-size: 45px;
     line-height: 75px;
     letter-spacing: 2.7px;
+
+    @media screen and (max-width: $media-w-phone) {
+        font-size: 20px;
+        line-height: 24px;
+        max-width: 240px;
+    }
 }
 
 .header__button {
@@ -74,12 +114,16 @@ $container-max-x: 1440px;
 .header__logos {
     display: flex;
     justify-content: space-between;
-    width: 886px;
+    max-width: 886px;
     margin: 0 auto;
     padding: 63px 0 0;
 
     img {
         height: 89px;
+    }
+
+    @media screen and (max-width: $media-w-phone) {
+        display: none;
     }
 }
 
@@ -102,6 +146,11 @@ $container-max-x: 1440px;
         font-size: 38px;
         line-height: 28px;
         letter-spacing: 2.28px;
+
+        @media screen and (max-width: $media-w-phone) {
+            font-size: 20px;
+            line-height: 28px;
+        }
     }
 
     .subtitle {
@@ -109,6 +158,11 @@ $container-max-x: 1440px;
         font-size: 18px;
         line-height: 28px;
         letter-spacing: 1.08px;
+
+        @media screen and (max-width: $media-w-phone) {
+            font-size: 14px;
+            line-height: 28px;
+        }
     }
 }
 
@@ -118,6 +172,10 @@ $container-max-x: 1440px;
 
 .about__container {
     padding: 129px 0 28px;
+
+    @media screen and (max-width: $media-w-phone) {
+        padding: 40px 20px;
+    }
 }
 
 .about__subtitle {
@@ -128,6 +186,10 @@ $container-max-x: 1440px;
     width: 80%;
     max-width: 1080px;
     margin: 70px auto;
+
+    @media screen and (max-width: $media-w-phone) {
+        width: 100%;
+    }
 }
 
 .about__text {
@@ -150,6 +212,12 @@ $container-max-x: 1440px;
         line-height: 28px;
         letter-spacing: 0.8px;
     }
+
+    @media screen and (max-width: $media-w-phone) {
+        p {
+            font-size: 14px;
+        }
+    }
 }
 
 .about__actually-do {
@@ -158,6 +226,16 @@ $container-max-x: 1440px;
     h3 {
         padding-bottom: 17px;
         font-size: 20px;
+    }
+
+    @media screen and (max-width: $media-w-phone) {
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 1.2px;
+
+        h3 {
+            font-size: 14px;
+        }
     }
 }
 
@@ -168,10 +246,22 @@ $container-max-x: 1440px;
         padding-bottom: 8px;
         font-size: 17px;
     }
+
+    @media screen and (max-width: $media-w-phone) {
+        width: 100%;
+
+        h3 {
+            font-size: 14px;
+        }
+    }
 }
 
 .featured__container {
     padding: 128px 0;
+
+    @media screen and (max-width: $media-w-phone) {
+        padding: 40px 20px;
+    }
 }
 
 .featured__subtitle {
@@ -185,6 +275,17 @@ $container-max-x: 1440px;
     gap: 15px;
     max-width: 1140px;
     margin: 100px auto 0;
+
+    @media screen and (max-width: $media-w-phone) {
+        width: 100%;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow-x: scroll;
+
+        > div {
+            width: 100%;
+        }
+    }
 }
 
 .team {
