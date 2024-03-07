@@ -294,6 +294,10 @@ $media-w-phone: 576px;
 
 .team__container {
     padding: 104px 0 171px;
+
+    @media screen and (max-width: $media-w-phone) {
+        padding: 40px 20px;
+    }
 }
 
 .team__subtitle {
@@ -315,6 +319,12 @@ $media-w-phone: 576px;
     &:hover {
         .employee__about {
             display: block;
+        }
+    }
+
+    @media screen and (max-width: $media-w-phone) {
+        img {
+            width: 100%;
         }
     }
 }
@@ -419,6 +429,10 @@ $media-w-phone: 576px;
         background-color: #001871b5;
         box-shadow: 0px 0px 30px 0px #1515151f;
     }
+
+    @media screen and (max-width: $media-w-phone) {
+        padding: 40px 20px;
+    }
 }
 
 .contact__feedback {
@@ -496,9 +510,18 @@ $media-w-phone: 576px;
 }
 
 .contact__map {
-    width: 455px;
-    height: 224px;
+    max-width: 455px;
+    max-height: 224px;
     margin-top: 33px;
+
+    @media screen and (max-width: $media-w-phone) {
+        width: 100%;
+
+        iframe {
+            max-width: 100%;
+            max-height: fit-content;
+        }
+    }
 }
 
 .footer {

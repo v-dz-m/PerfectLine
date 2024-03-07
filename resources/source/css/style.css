@@ -305,6 +305,11 @@
 .team__container {
   padding: 104px 0 171px;
 }
+@media screen and (max-width: 576px) {
+  .team__container {
+    padding: 40px 20px;
+  }
+}
 
 .team__subtitle {
   margin-top: 10px;
@@ -329,6 +334,11 @@
 }
 .employee:hover .employee__about {
   display: block;
+}
+@media screen and (max-width: 576px) {
+  .employee img {
+    width: 100%;
+  }
 }
 
 .employee__about {
@@ -444,6 +454,11 @@
   -webkit-box-shadow: 0px 0px 30px 0px rgba(21, 21, 21, 0.1215686275);
           box-shadow: 0px 0px 30px 0px rgba(21, 21, 21, 0.1215686275);
 }
+@media screen and (max-width: 576px) {
+  .contact__container {
+    padding: 40px 20px;
+  }
+}
 
 .contact__feedback {
   width: 100%;
@@ -542,9 +557,20 @@
 }
 
 .contact__map {
-  width: 455px;
-  height: 224px;
+  max-width: 455px;
+  max-height: 224px;
   margin-top: 33px;
+}
+@media screen and (max-width: 576px) {
+  .contact__map {
+    width: 100%;
+  }
+  .contact__map iframe {
+    max-width: 100%;
+    max-height: -webkit-fit-content;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+  }
 }
 
 .footer {
