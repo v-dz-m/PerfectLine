@@ -7,7 +7,8 @@ $dark-color: #505050;
 $purple-color: #68478d;
 $cyan-color: #6eeee4;
 $container-max-x: 1440px;
-$media-w-phone: 576px;
+$break-point-tablet: 992px;
+$break-point-phone: 576px;
 
 * {
     font-family: "Montserrat", sans-serif;
@@ -160,7 +161,7 @@ $media-w-phone: 576px;
     }
 
     p {
-        padding: 12px 0;
+        padding: 12px 0 0;
         font-size: 16px;
         line-height: 28px;
         letter-spacing: 0.8px;
@@ -378,7 +379,8 @@ $media-w-phone: 576px;
 }
 
 .contact__submit {
-    width: 244px;
+    width: 100%;
+    max-width: 244px;
     height: 53px;
     border-radius: 1px;
     background-color: $cyan-color;
@@ -476,7 +478,7 @@ $media-w-phone: 576px;
     fill: #ffffff;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: $break-point-phone) {
     .header__container {
         padding: 20px 20px 40px;
     }
@@ -495,9 +497,14 @@ $media-w-phone: 576px;
     }
 
     .header__title {
-        font-size: 20px;
-        line-height: 24px;
         max-width: 240px;
+        margin: 30px auto;
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    .header__button {
+        margin: 0;
     }
 
     .header__logos {
@@ -522,19 +529,25 @@ $media-w-phone: 576px;
 
     .about__samples {
         width: 100%;
+        margin: 30px auto;
     }
 
     .about__text {
-        font-size: 14px;
+        p {
+            font-size: 14px;
+            line-height: 17px;
+        }
     }
 
     .about__actually-do {
         font-size: 14px;
         line-height: 28px;
         letter-spacing: 1.2px;
+        margin-bottom: 30px;
 
         h3 {
             font-size: 14px;
+            padding-bottom: 8px;
         }
     }
 
@@ -543,6 +556,7 @@ $media-w-phone: 576px;
 
         h3 {
             font-size: 14px;
+            padding-bottom: 8px;
         }
     }
 
@@ -552,25 +566,35 @@ $media-w-phone: 576px;
 
     .featured__collection {
         width: 100%;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        overflow-x: scroll;
+        margin-top: 40px;
+    }
 
-        > div {
-            width: 100%;
-        }
+    .featured__demo > a > img {
+        width: 100%;
     }
 
     .team__container {
         padding: 40px 20px;
     }
 
+    .team__collection {
+        margin-top: 40px;
+    }
+
     .employee > img {
         width: 100%;
     }
 
+    .contact {
+        background: none;
+    }
+
     .contact__container {
         padding: 40px 20px;
+
+        > div {
+            height: 100%;
+        }
     }
 
     .contact__map {
@@ -580,5 +604,9 @@ $media-w-phone: 576px;
             max-width: 100%;
             max-height: fit-content;
         }
+    }
+
+    .footer {
+        padding: 30px 0;
     }
 }
