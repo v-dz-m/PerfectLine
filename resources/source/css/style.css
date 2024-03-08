@@ -577,7 +577,10 @@
     font-size: 14px;
     line-height: 28px;
   }
-  .about__container {
+  .about__container,
+  .featured__container,
+  .team__container,
+  .contact__container {
     padding: 40px 20px;
   }
   .about__samples {
@@ -602,23 +605,14 @@
     font-size: 14px;
     padding-bottom: 8px;
   }
-  .featured__container {
-    padding: 40px 20px;
-  }
   .featured__demo > a > img {
     width: 100%;
-  }
-  .team__container {
-    padding: 40px 20px;
   }
   .employee > img {
     width: 100%;
   }
   .contact {
     background: none;
-  }
-  .contact__container {
-    padding: 40px 20px;
   }
   .contact__container > div {
     height: 100%;

@@ -555,7 +555,10 @@ $break-point-phone: 576px;
         }
     }
 
-    .about__container {
+    .about__container,
+    .featured__container,
+    .team__container,
+    .contact__container {
         padding: 40px 20px;
     }
 
@@ -590,16 +593,8 @@ $break-point-phone: 576px;
         }
     }
 
-    .featured__container {
-        padding: 40px 20px;
-    }
-
     .featured__demo > a > img {
         width: 100%;
-    }
-
-    .team__container {
-        padding: 40px 20px;
     }
 
     .employee > img {
@@ -610,11 +605,7 @@ $break-point-phone: 576px;
         background: none;
     }
 
-    .contact__container {
-        padding: 40px 20px;
-
-        > div {
-            height: 100%;
-        }
+    .contact__container > div {
+        height: 100%;
     }
 }
