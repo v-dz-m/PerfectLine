@@ -46,10 +46,6 @@
   right: 20px;
 }
 
-.header__info {
-  /* will made flexbox and row-reverse for mobile */
-}
-
 .header__title {
   max-width: 400px;
   margin: 58px auto;
@@ -341,15 +337,14 @@
   padding: 140px 150px 122px;
 }
 .contact__container > div {
-  height: 460px;
   background-color: rgba(0, 24, 113, 0.7098039216);
   -webkit-box-shadow: 0px 0px 30px 0px rgba(21, 21, 21, 0.1215686275);
           box-shadow: 0px 0px 30px 0px rgba(21, 21, 21, 0.1215686275);
+  width: 100%;
+  max-width: 540px;
 }
 
 .contact__feedback {
-  width: 100%;
-  max-width: 614px;
   padding: 47px 32px 38px;
 }
 
@@ -433,8 +428,6 @@
 }
 
 .contact__info {
-  width: 100%;
-  max-width: 500px;
   padding: 35px 22px 20px;
 }
 
@@ -445,9 +438,7 @@
 }
 
 .contact__map {
-  max-width: 455px;
-  max-height: 224px;
-  margin-top: 33px;
+  margin-top: 20px;
 }
 
 .footer {
@@ -516,6 +507,48 @@
   fill: #ffffff;
 }
 
+@media screen and (max-width: 992px) {
+  .header__container,
+  .about__container,
+  .featured__container,
+  .team__container,
+  .contact__container {
+    padding: 40px;
+  }
+  .header__link {
+    display: none;
+  }
+  .header__link-small {
+    display: block;
+  }
+  .header__logos {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .about__samples {
+    margin: 50px auto;
+  }
+  .about__we-great {
+    width: 100%;
+  }
+  .featured__collection,
+  .team__collection {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .contact__map {
+    width: 100%;
+  }
+  .contact__map iframe {
+    max-width: 100%;
+    max-height: -webkit-fit-content;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+  }
+  .footer {
+    padding: 30px 0;
+  }
+}
 @media screen and (max-width: 576px) {
   .header__container {
     padding: 20px 20px 40px;
@@ -523,12 +556,6 @@
   .header__logo {
     width: 180px;
     height: 100px;
-  }
-  .header__link {
-    display: none;
-  }
-  .header__link-small {
-    display: block;
   }
   .header__title {
     max-width: 240px;
@@ -571,9 +598,6 @@
     font-size: 14px;
     padding-bottom: 8px;
   }
-  .about__we-great {
-    width: 100%;
-  }
   .about__we-great h3 {
     font-size: 14px;
     padding-bottom: 8px;
@@ -581,18 +605,11 @@
   .featured__container {
     padding: 40px 20px;
   }
-  .featured__collection {
-    width: 100%;
-    margin-top: 40px;
-  }
   .featured__demo > a > img {
     width: 100%;
   }
   .team__container {
     padding: 40px 20px;
-  }
-  .team__collection {
-    margin-top: 40px;
   }
   .employee > img {
     width: 100%;
@@ -605,17 +622,5 @@
   }
   .contact__container > div {
     height: 100%;
-  }
-  .contact__map {
-    width: 100%;
-  }
-  .contact__map iframe {
-    max-width: 100%;
-    max-height: -webkit-fit-content;
-    max-height: -moz-fit-content;
-    max-height: fit-content;
-  }
-  .footer {
-    padding: 30px 0;
   }
 }
