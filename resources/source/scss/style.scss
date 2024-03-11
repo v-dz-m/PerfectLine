@@ -192,11 +192,12 @@ $break-point-phone: 576px;
     margin-top: 10px;
 }
 
-.featured__collection {
+.featured__collection,
+.team__collection {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 20px;
     max-width: 1140px;
     margin: 100px auto 0;
 }
@@ -211,15 +212,6 @@ $break-point-phone: 576px;
 
 .team__subtitle {
     margin-top: 10px;
-}
-
-.team__collection {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    max-width: 1140px;
-    margin: 108px auto 0;
 }
 
 .employee {
@@ -504,6 +496,7 @@ $break-point-phone: 576px;
     .team__collection {
         width: 100%;
         margin-top: 40px;
+        gap: 40px;
     }
 
     .employee > img {
