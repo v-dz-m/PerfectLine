@@ -17,14 +17,18 @@
             <a href="/resources/views/admin/admin-panel.html">
                 <p class="header__start m-0">AdminPanel</p>
             </a>
-            <img class="header__logo" src="/resources/images/admin/admin-logo.svg" alt="Admin Logo">
+            <a href="/index.html">
+                <img class="header__logo" src="/resources/images/admin/admin-logo.svg" alt="PerfectLine Logo">
+            </a>
         </div>
     </header>
     <main class="person">
         <div class="person__container">
             <form action="" class="person__form">
                 <h1 class="person__title">Edit person</h1>
-                <img src="/resources/images/admin/cross.svg" alt="Close form" class="person__close">
+                <a href="/resources/views/admin/admin-panel.html">
+                    <img src="/resources/images/admin/cross.svg" alt="Close form" class="person__close">
+                </a>
                 <div class="person__data">
                     <div class="row">
                         <div class="col"><label for="name">Name</label></div>
@@ -65,15 +69,15 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col"><label for="mail">Mail</label></div>
-                        <div class="col">
-                            <input type="text" id="mail" name="mail" class="person__mail form-control">
-                        </div>
-                    </div>
-                    <div class="row">
                         <div class="col"><label for="twitter">Twitter</label></div>
                         <div class="col">
                             <input type="text" id="twitter" name="twitter" class="person__twitter form-control">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><label for="mail">Mail</label></div>
+                        <div class="col">
+                            <input type="text" id="mail" name="mail" class="person__mail form-control">
                         </div>
                     </div>
                 </div>
